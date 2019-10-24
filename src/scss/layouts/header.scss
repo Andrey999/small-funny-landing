@@ -1,0 +1,129 @@
+@import 'vars';
+
+.header {
+  background-color: #FFD25A;;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+// header logo
+.header__logo {
+  display: flex;
+
+  &-circle {
+    background: $btn-color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    &:nth-child(2) {
+      background: $default-color;
+    }
+  }
+}
+
+// header items
+.header__items {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    margin-left: 40px;
+  }
+
+  &-link {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    transition: color .4s ease;
+
+    &:hover {
+      color: lighten($default-color, 50%);
+    }
+  }
+}
+
+//////////////////////
+// hamburger
+.header__menu-burger {
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 14;
+  display: none;
+
+  span {
+    width: 20px;
+    height: 2px;
+    display: block;
+    background: $default-color;
+    margin-bottom: 6px;
+    transition: .4s ease;
+
+    &:nth-child(1) {
+
+      &.line-1 {
+        background: #fff;
+        width: 20px;
+        transform: translateX(0px) translateY(5px) rotateZ(129deg);
+      }
+    }
+
+    &:nth-child(2) {
+      width: 20px;
+      // margin-left: 10px;
+
+      &.line-2-hidden {
+        display: none;
+      }
+    }
+    &:nth-child(3) {
+      width: 20px;
+      // margin-left: 21px;
+
+      &.line-3 {
+        background: #fff;
+        width: 20px;
+        transform: translateX(0) translateY(-3px) rotateZ(-134deg);
+
+      }
+    }
+  }
+}
+
+//  mobile  menu
+.mobile__menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 70px 60px;
+}
+
+.menu__list-item {
+  padding-bottom: 50px;
+}
+
+.menu__list-link {
+  font-size: 20px;
+  color: #fff;
+}
+
+.mobile-menu {
+  background: rgba(60,60,80,.9);
+  position: absolute;
+  z-index: 12;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 9999px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.mobile-menu_show {
+  left: 0;
+}
