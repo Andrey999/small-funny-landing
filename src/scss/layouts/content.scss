@@ -1,0 +1,122 @@
+.content {
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.content__description {
+  max-width: 896px;
+  margin: auto;
+
+  &-title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: $text-color;
+  }
+}
+
+// image
+.content__image {
+  max-width: 1200px;
+  height: 610px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 135px;
+
+  &--item {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-item1 {
+    background-image: url('../img/svg/bg2.svg');
+    left: 48%;
+    transform: translateX(-50%);
+    top: 80px;
+    width: 611px;
+    height: 334px;
+  }
+
+  &-item2 {
+    background-image: url('../img/svg/man.svg');
+    left: 389px;
+    top: 24px;
+    width: 456px;
+    height: 588px;
+    z-index: 5;
+  }
+
+  &-item3 {
+    background-image: url('../img/svg/photo.svg');
+    right: 135px;
+    top: 193px;
+    width: 194px;
+    height: 179px;
+  }
+
+  &-item4 {
+    background-image: url('../img/svg/bg.svg');
+    left: 50%;
+    transform: translateX(-50%);
+    top: 400px;
+    width: 760px;
+    height: 189px;
+    z-index: 4;
+  }
+
+  &-item5 {
+    background-image: url('../img/svg/calendar.svg');
+    left: 130px;
+    top: 245px;
+    width: 166px;
+    height: 148px;
+   
+  }
+
+  &-item6 {
+    background-image: url('../img/svg/clock.svg');
+    left: 228px;
+    top: 0;
+    width: 94px;
+    height: 116px;
+  }
+}
+
+//  subtitle
+.subtitle {
+  color: $default-color;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle__text {
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    color: $text-color;
+
+    &:first-child {
+      max-width: 488px;
+    }
+  
+    &:last-child {
+      max-width: 488px;
+      margin-left: 20px;
+    }
+  }
+}
