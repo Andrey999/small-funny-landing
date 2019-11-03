@@ -1,1 +1,1 @@
-# small-funny-landing
+# Small-Funny-Landing
